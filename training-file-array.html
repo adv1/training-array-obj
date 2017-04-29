@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Testing file Array</title>
+	<link rel="stylesheet" type="text/css" href="training-file-style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="training-file.js"></script>
+</head>
+<body>
+	<div class="container"> 
+		<div class="container_Task" id="block_Task">
+			<div class="block" id="task_1">
+				<div id="task_1_h1">ЗАДАНИЕ 1</div>
+				<div>var arr = [1,12131,123,333,'ad','sihff','23434','a','tol',99,56,89,'rose'];</div>
+				<div> Отсортировать массив </div>
+				<div> <ol>
+						<li> сначала числа в порядке возрастания</li>
+						<li> сортировка текста в алфавитном порядке потом числа</li>
+						<li> сортировка чисел по убыванию, текст в алфавитном порядке</li>
+						<li> числа кратные 3 возвести в третью степень</li>
+						<li> если индекс массива кратен 4 следующие два елемента <br >заменяем на '**'</li>
+						<li> если елемент массива число - прибавить 5, <br> если строка - заменить пустой строкой</li>
+						<li> сформировать новый массив состоящий из строк массива arr</li>
+					</ol>  
+				</div>
+				<div>Все задания выполнить двумя способами</div>
+				<div> <ol>
+						<li>Сначала перебором for</li>
+						<li>Потом за счет методов прототипа массива</li>
+					</ol> 
+				</div>
+			</div>
+			<div class="block" id="task_2">
+				<div id="task_2_h1">ЗАДАНИЕ 2</div>
+				<div>arr = [1,2,3];</div>
+				<div>написать метод .duplicator, который будет делать следующее : </div>
+				<div>arr.duplicator()   --- > arr = [1,2,3,1,2,3]</div>
+				<div>или так ['a',2,11314].duplicator() --- > ['a',2,11314,'a',2,11314]</div>
+			</div>
+			<div class="block" id="task_3">
+				<div id="task_3_h1">ЗАДАНИЕ 3</div>
+				<div> <ol>
+						<li> var a = [1];</li>
+						<li> a[20] = 2;</li>
+						<li> a['b'] = 3;</li>
+						<li> a.push(4);</li>
+						<li> delete a[20];</li>
+						<li> a.slice(1,15,3,-2)</li>
+						<li> a.splice(1,15,3,-2)</li>
+					</ol> 
+				</div>
+				<div> a.length = ?</div>
+				<div> чему равна длинна массива </div>
+				<div> последний пример надо уметь обьяснить что происходит шаг за шагом </div>
+			</div>
+			<div class="block" id="task_4">
+				<div id="task_4_h1">ЗАДАНИЕ 4</div>
+				<div> var arr = [1,12131,123,333,'Ad','sihff','23434','a','tol',99,56,89,'rose']; </div>
+				<div> <ul> Сделать из элементов массива объект, где ключами будут значения элементов массива, 
+							 а значениями:
+						<li> Если элемент делится целочисленно на 3, тогда значение умножаем на 2, 
+							 в противном случае исходное значение</li>
+						<li> Если значение - строка, привести к нижнему регистру, если длинна строки > 2 
+							 в конце добавить символ ***** </li>
+						<li> Если строка начинается на 'a', заменить символ на 'myFavStartSymbol' </li>
+					</ul>
+				<div>Все задания выполнить двумя способами</div>
+				<div> <ul>
+						<li>Сначала перебором for</li>
+						<li>Потом за счет методов прототипа массива</li>
+					</ul> 
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_Answer" id="block_Answer">
+			<div class="block" id="answer_1"></div>
+			<div class="block" id="answer_2"></div>
+			<div class="block" id="answer_3"></div>
+			<div class="block" id="answer_4"></div>
+		</div>
+	</div>
+</body>
+</html>

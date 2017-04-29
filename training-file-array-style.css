@@ -1,0 +1,25 @@
+.container {
+	background-color: lightgrey;
+	margin:  auto;
+	display: flex;
+	flex-direction: column;
+}
+.container_Task {
+	background-color: lightskyblue;
+	border: 1px solid black;
+	flex-wrap: wrap;
+	display: flex;
+}
+.container_Answer {
+	background-color: lightgreen;
+	border: 1px solid black;
+	flex-wrap: wrap;
+	display: flex;
+}
+#task_1, #task_2,  #task_3, #task_4, #answer_1, #answer_2, #answer_3, #answer_4 {
+	width: 500px;
+	border: 1px solid black;
+}
+#task_1_h1, #task_2_h1, #task_3_h1, #task_2, #task_4_h1, #answer_1, #answer_2, #answer_3, #answer_4 {
+	text-align: center;
+}
