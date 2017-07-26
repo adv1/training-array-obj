@@ -3,8 +3,8 @@ $(document).ready(function() {
 	function Answer_1() {
 		var arr = [1,12131,123,333,'ad','sihff','23434','a','tol',99,56,89,'rose'];
 
-		// 1---------------------------------------------
-		/*function sort1() {
+		// ---------------------------------------------
+		function sort1() {
 			var repl, i, j;
 				
 			for (i = 0; i < arr.length; i++) {
@@ -24,10 +24,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task1 = sort1();
-		console.log(task1);*/
-		// ---------------------------------------------
-		// 2---------------------------------------------
-		/*function sort2() {
+		console.log(task1);
+
+        // ---------------------------------------------
+		function sort2() {
 			var repl2, 
 				repl,
 				i,
@@ -51,10 +51,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task2 = sort2();
-		console.log(task2);*/
-		// ---------------------------------------------
-		// 3---------------------------------------------
-		/*function sort3() {
+		console.log(task2);
+
+        // ---------------------------------------------
+		function sort3() {
 			var i, j, repl2, repl;
 
 			for (i = 0; i < arr.length; i++) {
@@ -74,10 +74,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task3 = sort3();
-		console.log(task3);*/
-		// ---------------------------------------------
-		// 4---------------------------------------------
-		/*function sort4() {
+		console.log(task3);
+
+        // ---------------------------------------------
+		function sort4() {
 			for (var i = 0; i < arr.length; i++) {
 				if (typeof arr[i] === 'number') {
 					if (arr[i] % 3 === 0) { 
@@ -88,10 +88,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task4 = sort4();
-		console.log(task4);*/
-		// ---------------------------------------------
-		// 5---------------------------------------------
-		/*function sort5() {
+		console.log(task4);
+
+        // ---------------------------------------------
+		function sort5() {
 			for (var i = 0; i < arr.length-1; i++) {
 				if (i > 0 && i % 4 === 0) {
 					arr[i+1] = '**';
@@ -101,10 +101,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task5 = sort5();
-		console.log(task5);*/
-		// ---------------------------------------------
-		// 6---------------------------------------------
-		/*function sort6() {
+		console.log(task5);
+
+        // ---------------------------------------------
+		function sort6() {
 			for (var i = 0; i < arr.length; i++) {
 				if (typeof arr[i] === 'number') {
 					arr[i] += 5;
@@ -116,10 +116,10 @@ $(document).ready(function() {
 			return arr;
 		};
 		var task6 = sort6();
-		console.log(task6);*/
-		// ---------------------------------------------
-		// 7---------------------------------------------
-		/*function sort7() {
+		console.log(task6);
+
+        // ---------------------------------------------
+		function sort7() {
 			var copy = [];
 			for (var i = 0; i < arr.length; i++) {
 				if (typeof arr[i] === 'string') {
@@ -132,81 +132,64 @@ $(document).ready(function() {
 			return copy;
 		};
 		var task7 = sort7();
-		console.log(task7);*/
+		console.log(task7);
 		// ---------------------------------------------
 
 		
-	// 1---------------------------------------------
-		/*function compareNumeric(a, b) {
+		// ---------------------------------------------
+		function compareNumeric(a, b) {
 		  if (a > b) return 1;
 		  if (a < b) return -1;
 		};
 		arr.sort(compareNumeric)
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 2---------------------------------------------
-		/*function compareNum(a, b) {
+		console.log(arr);
+
+		// ---------------------------------------------
+		function compareNum(a, b) {
 			if (a > b) return 1;
 		  	if (a < b) return -1;
 		  	if (a == b) return 0;
 		};
 		arr.sort(compareNum);
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 3---------------------------------------------
-		/*function compareNum(a, b) {
+		console.log(arr);
+
+		// ---------------------------------------------
+		function compareNum(a, b) {
 			if (a > b) return -1;
 		  	if (a < b) return 1;
 		};
 		arr.sort(compareNum)
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 4---------------------------------------------
-		/*arr = arr.map(function(element) { 
+		console.log(arr);
+
+		// ---------------------------------------------
+		arr = arr.map(function(element) {
 			return element % 3 === 0 ? Math.pow(element, 3) : element;
 		});
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 5---------------------------------------------
-		/*arr.reduce(function(previousValue, element, i, array) {
+		console.log(arr);
+
+		// ---------------------------------------------
+		arr.reduce(function(previousValue, element, i, array) {
 			(i > 0) && (i % 4 === 0) && (i < array.length-1) ? (array[i+1] = '**') && (array[i+2] = '**') : array[i] = element;
 			return array;
 		}, []);
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 6---------------------------------------------
-		/*arr.reduce(function(previousValue,element,i,array) {
+		console.log(arr);
+
+		// ---------------------------------------------
+		arr.reduce(function(previousValue,element,i,array) {
 			typeof element === 'number' ? array[i] = element + 5 : typeof element === 'string' ? array[i] = '': array[i] = element;
 			return array;
 		},[]);
-		console.log(arr);*/
-	// ---------------------------------------------
-	// 7---------------------------------------------
-		/*var copyArr = arr.filter(function(element) {
+		console.log(arr);
+
+		// ---------------------------------------------
+		var copyArr = arr.filter(function(element) {
 			if (typeof element === 'string') {return element}
 		})
-		console.log(copyArr);*/
-	// ---------------------------------------------
-		
+		console.log(copyArr);
+		// ---------------------------------------------
 
-			/*Отсортировать массив
-			1) сначала числа в порядке возрастания
-			2) сортировка текста в алфавитном порядке потом числа
-			3) сортировка чисел по убыванию, текст в алфавитном порядке
-			4) числа кратные 3 возвести в третью степень
-			5) если индекс массива кратен 4 следующие два елемента 
-			заменяем на '**'
-			6) если елемент массива число - прибавить 5, 
-			если строка - заменить пустой строкой
-			7) сформировать новый массив состоящий из строк массива arr
-			
-			Все задания выполнить двумя способами
-			Сначала перебором for
-			Потом за счет методов прототипа массива*/
 
-		var Answer_1 = $('#answer_1').html('<p> ЗАДАНИЕ 1 </p>' +
-											'<p> В training-file.js </p>' +
-											'<p> ответы закоментированы и разделены </p>');
+		var Answer_1 = $('#answer_1').html('<p> ЗАДАНИЕ 1 </p>' + '<p> ответы </p>');
 	};
 
 	function Answer_2() {
@@ -220,18 +203,14 @@ $(document).ready(function() {
 		var arr2 = ['a',2,11314];
 		var y = ['a',2,11314].duplicator();
 	
-		/*console.log(x);
-		console.log(y);*/
-
-				//написать метод .duplicator, который будет делать следующее : 
-				//arr.duplicator()   --- > arr = [1,2,3,1,2,3]
-				//или так ['a',2,11314].duplicator() --- > ['a',2,11314,'a',2,11314]
+		console.log(x);
+		console.log(y);
 		
 		var Answer_2 = $('#answer_2').html('<p> ЗАДАНИЕ 2 </p>' + 
 									'<p> Array.prototype.duplicator = function() {' +
 									'<p> return this.concat(this.slice()) </p>' +
 									'<p> }; </p>');
-	};	
+	};
 
 	function Answer_3 () {
 		var a = [1];
@@ -242,12 +221,9 @@ $(document).ready(function() {
 		a.slice(1,15,3,-2)
 		a.splice(1,15,3,-2)
 				
-		/*console.log(a);
-		console.log(a.length);*/
+		console.log(a);
+		console.log(a.length);
 
-		//a.length = ?
-		//чему равна длинна массива 
-		//последний пример надо уметь обьяснить что происходит шаг за шагом 
 
 		var Answer_3 = $('#answer_3').html('<p> ЗАДАНИЕ 3 </p>' +
 					'<p> 1. 	- создается новый массив длинна = 1; </p>' +   
@@ -275,8 +251,8 @@ $(document).ready(function() {
 	function Answer_4() {
 		var arr = [1,12131,123,333,'Ad','sihff','23434','a','tol',99,56,89,'rose'];
 
-		// 1---------------------------------------------
-		/*function transformToObj() {
+		// ---------------------------------------------
+		function transformToObj() {
 			var arrObj = {};
 			for (var i = 0; i < arr.length; i++) {
 				var ins = arr[i];
@@ -289,12 +265,11 @@ $(document).ready(function() {
 		};
 		
 		var arrObj = transformToObj()
-		console.log(arrObj);*/
-		// ---------------------------------------------
+		console.log(arrObj);
 		
 	
-		// 2---------------------------------------------
-		/*var arrObj = arr.reduce(function(previousValue, currentValue, index, array) { 
+		// ---------------------------------------------
+		var arrObj = arr.reduce(function(previousValue, currentValue, index, array) {
 				
 			(currentValue % 3 === 0) ? previousValue[currentValue] = currentValue * 2 : 
 			(currentValue.length > 2) ? previousValue[currentValue] = currentValue + '*****' : 
@@ -304,12 +279,11 @@ $(document).ready(function() {
 			return previousValue;
 		}, {})
 
-		console.log(arrObj);*/
+		console.log(arrObj);
 		// ---------------------------------------------
 
 		var Answer_4 = $('#answer_4').html('<p> ЗАДАНИЕ 4 </p>' +
-											'<p> В training-file.js </p>' +
-											'<p> ответы закоментированы и разделены </p>');
+											'<p> ответы </p>');
 	};
 	
 	$('.container_Answer').val(Answer_1);
